@@ -6,11 +6,17 @@
     <title>Tailwind Project</title>
     <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- navbar -->
     <nav class="p-3 flex bg-white justify-between items-center">
-        <a href="#" id="brand" class="flex gap-2 items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
             <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="asset-0">
             <span class="text-lg font-medium font-display">ToDesktop</span>
         </a>
@@ -27,11 +33,15 @@
             <a href="#" class="font-medium hover:text-primary
             ">Login</a>
         </div>
-        <button class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-            <img src="./assets/asset 1.svg" alt="asset-1">
-            <span>Electron Developer</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
+
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <img src="./assets/asset 1.svg" alt="asset-1">
+                <span>Electron Developer</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            
+        </div>
         <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
@@ -62,6 +72,52 @@
         </div>
     </div>
     </nav>
+
+    <!-- main -->
+
+    <main>
+        <!-- HERO Section -->
+        <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
+                <div id="version-text" class="flex my-6 gap-2 items-center border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:-translate-y-1 transition group">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full  border border-yellow-600"></div>
+                    <p class="font-display font-medium text-yellow-600">
+                        v0.21.1: 
+                        <span class="text-yellow-800">
+                            Find-in-page bug fixes
+                        </span>
+                    </p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+                </div>
+                <div id="hero-features" class="hidden sm:flex gap-8 my-6">
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-regular fa-file-code text-sm"></i>
+                        <p>Code Optional</p>
+                    </div>
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-solid fa-hand-back-fist text-sm"></i>
+                        <p>Drag & Drop Filter</p>
+                    </div>
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-solid fa-laptop text-sm"></i>
+                        <p>Windows, Mac, Linux</p>
+                    </div>
+
+                </div>
+
+                <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-7xl">
+                    Web app to desktop app in minutes
+                </h1>
+                <p class="text-xl mt-4 sm:text-2xl sm:mt-8 sm:leading-normal text-gray-800 ">
+                    Take your web app codebase and transform it into a cross platform desktop app with native functionality.
+                </p>
+                <div id="buttons-container" class="mt-12 flex flex-col gap-4 sm:flex-row">
+                    <button class="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">Download now</button>
+                    <button class="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800 ">Read Docs</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 <script src="./script.js"></script>
 </html>
