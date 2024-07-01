@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
         <a href="#" id="brand" class="flex gap-2 items-center flex-1">
             <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="asset-0">
             <span class="text-lg font-medium font-display">ToDesktop</span>
@@ -75,7 +75,7 @@
 
     <!-- main -->
 
-    <main>
+    <main class="mt-16">
         <!-- HERO Section -->
         <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
             
@@ -288,7 +288,7 @@
 
 
         <!-- Step by Step -->
-        <div id="steps" class="container flex flex-col gap-6 px-6 py-12 max-w-7xl mt-16  mx-auto lg:px-8 lg:mt-32">
+        <div id="steps" class="container flex flex-col gap-6 px-6 py-12 max-w-7xl mt-16  mx-auto lg:px-8 lg:mt-20">
             <h2 class="text-5xl sm:font-semibold pb-5">How it Works</h2>
             <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
                 <div class="flex flex-col gap-6 lg:w-1/2">
@@ -420,7 +420,7 @@
 
         <!-- bento grid -->
 
-        <div id="bento-grid" class="px-6 py-12 max-w-7xl mt-16  mx-auto lg:px-8 lg:mt-32">
+        <div id="bento-grid" class="px-6 py-12 max-w-7xl mt-16  mx-auto lg:px-8 lg:mt-1">
             <h2 class="text-5xl sm:font-semibold mb-14 max-w-2xl">ToDesktop handles the details</h2>
         <div id="grid-container" class="flex flex-col gap-6  lg:grid lg:grid-cols-3 px-6 py-12 max-w-7xl mt-16  mx-auto lg:px-8 lg:mt-32" style="grid: auto rows 96px;">
 
@@ -467,7 +467,7 @@
         </div>
     </div>
         <!-- companies featured line -->
-        <div id="featured-line" class="px-6 py-12 max-w-7xl mt-4 mx-auto lg:px-8 lg:mt-32">
+        <div id="featured-line" class="px-6 py-12 max-w-7xl mt-4 mx-auto lg:px-8 lg:mt-10">
             <div class="border rounded-lg overflow-hidden flex justify-center p-4">
                 <div id="line-4" class="flex gap-8 p-6">
                     <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold"> Download Analytics</h3>
@@ -489,7 +489,7 @@
 
         </div>
         <!-- testimonials -->
-        <div id="testimonials" class="px-6 py-12 max-w-7xl mt-16  mx-auto lg:px-8 lg:mt-32">
+        <div id="testimonials" class="px-6 py-12 max-w-7xl mt-16  mx-auto lg:px-8 lg:mt-10">
             <h2 class="text-5xl sm:font-semibold mb-14">Customer Stories</h2>
             <div class="rounded-xl border flex flex-col lg:flex-row items-end p-6">
                 <div id="left" class="flex flex-col gap-12">
@@ -744,7 +744,7 @@
         <!-- FAQs section -->
         <div id="faq" class="container">
             <h2 class="text-5xl leading-normal sm:font-semibold max-w-2xl ">FAQs</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start  ">
                 <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6 ">
                     <dt class="flex justify-between items-center" aria-controls="faq-1">
                         <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
@@ -801,7 +801,30 @@
                 </div>
             </div>
         </div>
-        <div class="h-[1000px]">
+
+
+        <footer class="container">
+            <div class="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+                <a href="#" class="font-light font-display">Documentation</a>
+                <div class="flex gap-8">
+                    <a href="#" class="text-lg text-gray-600
+                    hover:text-gray-900"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-lg text-gray-600
+                    hover:text-gray-900"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+                    <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="asset-0">
+                    <span class="text-lg font-medium font-display">ToDesktop</span>
+                </a>
+            </div>
+            <div id="sub-footer" class="flex flex-col items-center justify-center my-12">
+                <div class="flex gap-2 items-center">
+                    <img class="w-4 h-4" src="./assets/asset 54.svg" alt="asset-54">
+                    <p class="text-sm text-gray-600">A Y Combinator Company</p>
+                </div>
+                <p class="text-m text-gray-400 py-4">© 2024 ToDesktop, Inc. All rights reserved.</p>
+            </div>
+        </footer>
 
         </div>
     </main>
